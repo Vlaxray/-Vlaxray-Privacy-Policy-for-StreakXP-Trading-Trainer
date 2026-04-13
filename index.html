@@ -4,110 +4,342 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>StreakXP Trading Trainer - Privacy Policy</title>
-    <meta name="description" content="Privacy Policy for StreakXP Trading Trainer." />
     <style>
       :root {
-        --bg: #09090b;
-        --card: #18181b;
-        --text: #e4e4e7;
-        --muted: #a1a1aa;
-        --accent: #22d3ee;
-        --border: #3f3f46;
+        --bg: #0b1020;
+        --bg-2: #111a33;
+        --card: #15213f;
+        --text: #e7ecff;
+        --muted: #b6c2ee;
+        --accent: #7dd3fc;
+        --accent-2: #86efac;
+        --warn: #fca5a5;
       }
-      * { box-sizing: border-box; }
+
+      * {
+        box-sizing: border-box;
+      }
+
       body {
         margin: 0;
-        font-family: "Segoe UI", Arial, sans-serif;
-        background: radial-gradient(circle at top, #111827 0%, var(--bg) 55%);
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
         color: var(--text);
-        line-height: 1.6;
+        background: radial-gradient(circle at 20% 0%, var(--bg-2), var(--bg));
+        line-height: 1.55;
       }
-      .wrap { max-width: 900px; margin: 0 auto; padding: 24px 16px 56px; }
-      .card {
-        background: linear-gradient(180deg, #1f2937 0%, var(--card) 40%);
-        border: 1px solid var(--border);
+
+      .wrap {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 28px 18px 56px;
+      }
+
+      .lang-switch {
+        display: inline-flex;
+        gap: 6px;
+        margin-bottom: 12px;
+        background: rgba(10, 16, 33, 0.7);
+        padding: 4px;
+        border-radius: 10px;
+        border: 1px solid #355084;
+      }
+
+      .lang-btn {
+        padding: 7px 10px;
+        border-radius: 7px;
+        border: 1px solid transparent;
+        color: #dce8ff;
+        background: transparent;
+        font-size: 12px;
+        font-weight: 700;
+        cursor: pointer;
+      }
+
+      .lang-btn.is-active {
+        background: #1d4ed8;
+        border-color: #5b8cff;
+      }
+
+      .lang-block {
+        display: none;
+      }
+
+      .lang-block.is-active {
+        display: block;
+      }
+
+      .hero {
+        background: linear-gradient(135deg, #1e2f57, #1a2750);
+        border: 1px solid #2a3d6b;
         border-radius: 16px;
-        padding: 20px;
-        margin-bottom: 14px;
+        padding: 22px;
       }
-      h1, h2, h3 { margin: 0 0 10px; line-height: 1.25; }
-      h1 { font-size: 28px; }
-      h2 { font-size: 20px; color: var(--accent); margin-top: 6px; }
-      p, li { color: var(--text); }
-      .muted { color: var(--muted); }
-      a { color: #67e8f9; }
-      ul { margin: 8px 0 0 20px; }
-      code { background: #27272a; border: 1px solid #3f3f46; border-radius: 6px; padding: 1px 6px; }
+
+      .meta {
+        margin-top: 10px;
+        font-size: 14px;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 14px;
+        margin-top: 14px;
+      }
+
+      .card {
+        background: var(--card);
+        border: 1px solid #2a3d6b;
+        border-radius: 14px;
+        padding: 16px;
+      }
+
+      .badge {
+        display: inline-block;
+        font-size: 12px;
+        padding: 3px 8px;
+        border-radius: 999px;
+        margin-bottom: 8px;
+        border: 1px solid #37548f;
+        color: var(--accent);
+      }
+
+      h1,
+      h2 {
+        margin: 0 0 10px;
+      }
+
+      p {
+        margin: 0 0 12px;
+        color: var(--muted);
+      }
+
+      ul {
+        margin: 8px 0 0 20px;
+        color: var(--muted);
+      }
+
+      li {
+        margin-bottom: 8px;
+      }
+
+      .ok {
+        color: var(--accent-2);
+        font-weight: 600;
+      }
+
+      .warn {
+        color: var(--warn);
+        font-weight: 600;
+      }
+
+      a {
+        color: var(--accent);
+      }
+
+      .footer {
+        margin-top: 18px;
+        font-size: 13px;
+        color: #a9b7e8;
+      }
+
+      @media (min-width: 900px) {
+        .grid {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
     </style>
   </head>
   <body>
     <main class="wrap">
-      <section class="card">
-        <h1>Privacy Policy - StreakXP Trading Trainer</h1>
-        <p class="muted">Last updated: April 6, 2026</p>
-        <p>
-          This Privacy Policy explains how <strong>StreakXP Trading Trainer</strong>
-          handles user data.
-        </p>
+      <div class="lang-switch" aria-label="Language switch">
+        <button class="lang-btn is-active" type="button" data-lang-target="en">English</button>
+        <button class="lang-btn" type="button" data-lang-target="it">Italiano</button>
+      </div>
+
+      <section class="hero">
+        <div class="lang-block is-active" data-lang="en">
+          <h1>StreakXP Trading Trainer - Privacy Policy</h1>
+          <p class="meta">Google Play app name: <strong>StreakXP Trading Trainer</strong></p>
+          <p>
+            This Privacy Policy explains what data is collected and how it is used when you use StreakXP Trading
+            Trainer.
+          </p>
+          <p>Last updated: 2026-04-13 (UTC)</p>
+        </div>
+
+        <div class="lang-block" data-lang="it">
+          <h1>StreakXP Trading Trainer - Informativa sulla Privacy</h1>
+          <p class="meta">Nome app su Google Play: <strong>StreakXP Trading Trainer</strong></p>
+          <p>
+            Questa Informativa sulla Privacy spiega quali dati vengono raccolti e come vengono utilizzati quando usi
+            StreakXP Trading Trainer.
+          </p>
+          <p>Ultimo aggiornamento: 2026-04-13 (UTC)</p>
+        </div>
       </section>
 
-      <section class="card">
-        <h2>Data We Collect</h2>
-        <p>
-          The app primarily stores gameplay and profile data locally on your device.
-        </p>
-        <ul>
-          <li>Local profiles</li>
-          <li>XP, levels, streaks, missions, challenge progress</li>
-          <li>Trade history and local app preferences</li>
-        </ul>
+      <section class="grid">
+        <article class="card lang-block is-active" data-lang="en">
+          <span class="badge">Data We Collect</span>
+          <h2>Collected Data Categories</h2>
+          <ul>
+            <li><strong>Personal Info:</strong> nickname/name, email address, user ID.</li>
+            <li><strong>Financial Info:</strong> purchase history for in-app purchases (if you make purchases).</li>
+            <li><strong>App Activity:</strong> app interactions and other actions for analytics.</li>
+            <li><strong>Identifiers:</strong> device or other technical identifiers used for analytics.</li>
+          </ul>
+          <p class="ok">We do not sell your personal data.</p>
+        </article>
+
+        <article class="card lang-block" data-lang="it">
+          <span class="badge">Dati Raccolti</span>
+          <h2>Categorie di Dati Raccolti</h2>
+          <ul>
+            <li><strong>Informazioni personali:</strong> nickname/nome, indirizzo email, ID utente.</li>
+            <li><strong>Informazioni finanziarie:</strong> cronologia acquisti in-app (se effettui acquisti).</li>
+            <li><strong>Attivita nell'app:</strong> interazioni e altre azioni a fini di analytics.</li>
+            <li><strong>Identificatori:</strong> ID dispositivo o altri identificatori tecnici per analytics.</li>
+          </ul>
+          <p class="ok">Non vendiamo i tuoi dati personali.</p>
+        </article>
+
+        <article class="card lang-block is-active" data-lang="en">
+          <span class="badge">Data Not Collected</span>
+          <h2>Categories Not Collected</h2>
+          <ul>
+            <li>Precise location and approximate location.</li>
+            <li>Health and fitness data.</li>
+            <li>Messages, photos/videos, and audio files.</li>
+            <li>Contacts, calendar, web browsing history, files and docs.</li>
+            <li>Crash logs, diagnostics, and other app performance data.</li>
+            <li>Payment card details, credit scores, and other financial account data.</li>
+          </ul>
+        </article>
+
+        <article class="card lang-block" data-lang="it">
+          <span class="badge">Dati Non Raccolti</span>
+          <h2>Categorie Non Raccolte</h2>
+          <ul>
+            <li>Posizione precisa e approssimativa.</li>
+            <li>Dati salute e fitness.</li>
+            <li>Messaggi, foto/video e file audio.</li>
+            <li>Contatti, calendario, cronologia web, file e documenti.</li>
+            <li>Crash log, diagnostica e altri dati di performance app.</li>
+            <li>Dati carta di pagamento, credit score e altri dati finanziari di conto.</li>
+          </ul>
+        </article>
+
+        <article class="card lang-block is-active" data-lang="en">
+          <span class="badge">Purposes</span>
+          <h2>Why We Collect Data</h2>
+          <ul>
+            <li><strong>App functionality:</strong> to provide core app features.</li>
+            <li><strong>Account management:</strong> to authenticate users and manage user accounts.</li>
+            <li><strong>Analytics:</strong> to understand usage and improve the app experience.</li>
+            <li><strong>Fraud prevention, security, and compliance:</strong> limited to purchase-history related controls.</li>
+          </ul>
+          <p class="warn">Collected data is not processed only ephemerally; relevant records may be stored.</p>
+        </article>
+
+        <article class="card lang-block" data-lang="it">
+          <span class="badge">Finalita</span>
+          <h2>Perche Raccogliamo i Dati</h2>
+          <ul>
+            <li><strong>Funzionalita app:</strong> per fornire le funzioni principali dell'app.</li>
+            <li><strong>Gestione account:</strong> per autenticare gli utenti e gestire gli account.</li>
+            <li><strong>Analytics:</strong> per comprendere l'utilizzo e migliorare l'esperienza.</li>
+            <li><strong>Prevenzione frodi, sicurezza e compliance:</strong> limitata ai controlli sulla cronologia acquisti.</li>
+          </ul>
+          <p class="warn">I dati raccolti non sono trattati esclusivamente in modo effimero; alcuni record possono essere conservati.</p>
+        </article>
+
+        <article class="card lang-block is-active" data-lang="en">
+          <span class="badge">Sharing and Security</span>
+          <h2>How Data Is Handled</h2>
+          <ul>
+            <li>We do not sell personal data.</li>
+            <li>We do not share personal data for advertising/marketing purposes.</li>
+            <li>Data may be processed by infrastructure and payment platforms required to operate the service.</li>
+            <li>Reasonable technical and organizational safeguards are applied to protect data.</li>
+          </ul>
+        </article>
+
+        <article class="card lang-block" data-lang="it">
+          <span class="badge">Condivisione e Sicurezza</span>
+          <h2>Come Sono Trattati i Dati</h2>
+          <ul>
+            <li>Non vendiamo dati personali.</li>
+            <li>Non condividiamo dati personali per finalita pubblicitarie/marketing.</li>
+            <li>I dati possono essere trattati da piattaforme infrastrutturali e di pagamento necessarie al servizio.</li>
+            <li>Applichiamo misure tecniche e organizzative ragionevoli per proteggere i dati.</li>
+          </ul>
+        </article>
+
+        <article class="card lang-block is-active" data-lang="en">
+          <span class="badge">Retention and Deletion</span>
+          <h2>Data Retention and User Rights</h2>
+          <ul>
+            <li>Data is retained for as long as needed to provide the service and comply with legal obligations.</li>
+            <li>Purchase records may be retained for security, fraud prevention, and accounting requirements.</li>
+            <li>You can request account deletion and related data deletion through our deletion page.</li>
+          </ul>
+          <p>
+            Account and data deletion page:
+            <a href="account-deletion.html">account-deletion.html</a>
+          </p>
+        </article>
+
+        <article class="card lang-block" data-lang="it">
+          <span class="badge">Conservazione e Cancellazione</span>
+          <h2>Conservazione Dati e Diritti Utente</h2>
+          <ul>
+            <li>I dati sono conservati per il tempo necessario a fornire il servizio e rispettare obblighi di legge.</li>
+            <li>I record acquisti possono essere conservati per sicurezza, prevenzione frodi e requisiti contabili.</li>
+            <li>Puoi richiedere eliminazione account e dati tramite la nostra pagina dedicata.</li>
+          </ul>
+          <p>
+            Pagina eliminazione account e dati:
+            <a href="account-deletion.html">account-deletion.html</a>
+          </p>
+        </article>
       </section>
 
-      <section class="card">
-        <h2>Purchases</h2>
-        <p>
-          In-app purchases and subscriptions are processed by <strong>Google Play Billing</strong>.
-          Purchase history may be processed for app functionality (unlocking/restoring PRO access).
-        </p>
-        <p>
-          We do not collect payment card details directly in the app.
-        </p>
-      </section>
+      <p class="footer lang-block is-active" data-lang="en">
+        Support contact: <a href="mailto:webmaniabusiness@gmail.com">webmaniabusiness@gmail.com</a>
+      </p>
 
-      <section class="card">
-        <h2>Data Sharing</h2>
-        <p>
-          We do not share your personal data with third parties for advertising or analytics.
-        </p>
-      </section>
-
-      <section class="card">
-        <h2>Data Deletion</h2>
-        <p>
-          You can delete data directly in the app:
-        </p>
-        <ul>
-          <li>Delete single profile from the Profile screen</li>
-          <li>Use <code>Reset totale dati locali</code> for full local reset</li>
-        </ul>
-        <p>
-          See detailed steps at <a href="/privacy/delete-data/">/privacy/delete-data/</a>.
-        </p>
-      </section>
-
-      <section class="card">
-        <h2>Security</h2>
-        <p>
-          Data transmitted off-device for billing-related functionality is protected in transit using industry-standard encryption.
-        </p>
-      </section>
-
-      <section class="card">
-        <h2>Contact</h2>
-        <p>
-          For privacy-related requests, use the support contact shown on the Google Play listing for StreakXP Trading Trainer.
-        </p>
-      </section>
+      <p class="footer lang-block" data-lang="it">
+        Contatto supporto: <a href="mailto:webmaniabusiness@gmail.com">webmaniabusiness@gmail.com</a>
+      </p>
     </main>
+
+    <script>
+      (function () {
+        const buttons = document.querySelectorAll('[data-lang-target]');
+        const blocks = document.querySelectorAll('[data-lang]');
+
+        function setLanguage(lang) {
+          document.documentElement.lang = lang;
+
+          buttons.forEach((btn) => {
+            btn.classList.toggle('is-active', btn.getAttribute('data-lang-target') === lang);
+          });
+
+          blocks.forEach((block) => {
+            block.classList.toggle('is-active', block.getAttribute('data-lang') === lang);
+          });
+        }
+
+        buttons.forEach((btn) => {
+          btn.addEventListener('click', () => {
+            const lang = btn.getAttribute('data-lang-target') || 'en';
+            setLanguage(lang);
+          });
+        });
+
+        setLanguage('en');
+      })();
+    </script>
   </body>
 </html>
